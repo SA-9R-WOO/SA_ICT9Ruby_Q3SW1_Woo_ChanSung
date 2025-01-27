@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q3 Seatwork 1 </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <style>
+      	body{
+      		font-family: fantasy;
+      		}
+      	kbd,p{
+      		font-size: 50px;
+
+      		}
+      	img{
+      		height: 150px;
+      		width: 140px;
+      	}
+      	a{
+      		margin-left: 20px;
+      		margin-right: 20px;
+      	}
+    </style>
+</head>
+
+<body class="bg-info text-light">
+<br><br>
+    
+<div class="container">
+
+    <center>
+    <img src="https://media.giphy.com/media/G4qAZYIFr1Cww/giphy.gif?cid=790b7611xcpwmzymq5qqews42p1ncxeiuu69irvgq92knpc4&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+    <br><br>
+
+<div class="col-md-12">
+    <h2>Select the currency to convert</h2>
+    <kbd id="amount"></kbd>
+    <h2>Pesos to other currencies</h2>
+</div>
+
+<script>
+    var php = 100; // given value in peso
+    document.getElementById("amount").textContent = php; // Dynamically set the value inside <kbd>
+</script>
+
+    </center>
+
+
+    <br>
+
+    <center>     
+    <div class="col-md-12">
+        <p id="display"></p>
+        <br>
+        <button type="button" class="btn btn-primary" onclick="var php = 100; var $dollar=58.66; document.getElementById('display').innerHTML= '<kbd>' + php/$dollar + '</kbd>';">Dollar</button>
+         <button type="button" class="btn btn-warning" onclick="var php = 100; var baht=1.69; document.getElementById('display').innerHTML= '<kbd>' + php/baht + '</kbd>';">Baht</button>
+          <button type="button" class="btn btn-success" onclick="var php = 100; var won=24.54; document.getElementById('display').innerHTML= '<kbd>' + php/won + '</kbd>';">Won</button>
+           <button type="button" class="btn btn-light" onclick="var php = 100; var yen=2.65; document.getElementById('display').innerHTML= '<kbd>' + php/yen + '</kbd>';">Yen</button> 
+            <button type="button" class="btn btn-secondary" onclick="var php = 100; var zim=6.20655; document.getElementById('display').innerHTML= '<kbd>' + php/zim + '</kbd>';">Zimbabwe Dollar</button>
+             <button type="button" class="btn btn-dark" onclick="var php = 100; var pound=0.01375; document.getElementById('display').innerHTML= '<kbd>' + php/pound + '</kbd>';">Pound</button>
+
+
+
+    </div>
+    </center>
+</div>
+
+    <br>
+
+    <center>
+    <div class="col-md-12">
+        <a href="index.html"><button class="btn btn-success btn-lg">Reset</button></a>
+
+   	</div>
+   </center>
+
+   
+
+</body>
+</html>
